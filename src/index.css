@@ -1,0 +1,51 @@
+:root {
+    --color-primary: #1ed760;
+    --color-primary-darker: #1db954;
+    /* --color-black: #191414; */
+    --color-black: rgb(24, 24, 24);
+    --color-black-lighter: #1c1c1c;
+    --color-white: #ffffff;
+    --color-border: #333;
+    --color-gray: rgba(255, 255, 255, 0.6);
+    --color-red: rgb(237, 106, 93);
+    --color-yellow: rgb(245, 192, 71);
+    --color-green: rgb(98, 199, 85);
+
+    --font-color: var(--color-black);
+}
+
+body {
+    font-family: "Cabin", sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+    line-height: 1.48;
+    /* -webkit-font-smoothing: antialiased; */
+}
+
+html,
+body,
+#root,
+.App {
+    height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px !important;
+}

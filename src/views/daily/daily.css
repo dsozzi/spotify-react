@@ -1,0 +1,7 @@
+#daily .section-album-container{
+    justify-content: flex-start;
+}
+
+#daily .section-album-container .album{
+    margin-right: 20px;
+}
