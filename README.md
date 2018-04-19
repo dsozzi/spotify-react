@@ -2,7 +2,21 @@
 
 A simple test in recreating the MAC OS App using React.js
 
-Showcase at [www.musaethemes.com/spotify](https://www.musaethemes.com/spotify)
+## Getting Started
+
+First `cd` into the app folder and install all dependencies typying in the terminal:
+
+```
+npm install
+```
+
+then run the server
+
+```
+npm start
+```
+
+and visit `localhost:3000`
 
 ### Sidenotes
 
