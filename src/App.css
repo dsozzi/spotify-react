@@ -86,6 +86,7 @@
     letter-spacing: 1.5px;
     margin-bottom: 10px;
     display: inline-block;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* MAIN AREA */
