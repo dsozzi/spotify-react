@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Album from "../../components/Album";
+import SectionHeader from "../../components/SectionHeader";
 
 import "./home.css";
 
@@ -9,8 +10,14 @@ export default class Home extends Component {
             <React.Fragment>
                 <h1 />
                 <section id="home" className="section-container">
-                    <h3 className="section-title">Il tuo pomeriggio in musica</h3>
-                    <div className="section-album-container">
+                    <SectionHeader title="Il tuo pomeriggio in musica" controls="true" />
+                    <div className="section-album-container section-album-container--scrollable ">
+                        <Album title="Germany top 50" desc="playlist" footer="65,837 FOLLOWERS" />
+                        <Album title="Germany top 50" desc="playlist" footer="65,837 FOLLOWERS" />
+                        <Album title="Germany top 50" desc="playlist" footer="65,837 FOLLOWERS" />
+                        <Album title="Germany top 50" desc="playlist" footer="65,837 FOLLOWERS" />
+                        <Album title="Germany top 50" desc="playlist" footer="65,837 FOLLOWERS" />
+                        <Album title="Germany top 50" desc="playlist" footer="65,837 FOLLOWERS" />
                         <Album title="Germany top 50" desc="playlist" footer="65,837 FOLLOWERS" />
                         <Album title="Germany top 50" desc="playlist" footer="65,837 FOLLOWERS" />
                         <Album title="Germany top 50" desc="playlist" footer="65,837 FOLLOWERS" />
@@ -20,7 +27,7 @@ export default class Home extends Component {
                     </div>
                 </section>
                 <section id="home" className="section-container">
-                    <h3 className="section-title">Genres & Moods</h3>
+                    <SectionHeader title="Genres & Moods" />
                     <div className="section-album-container">
                         <Album title="Germany top 50" />
                         <Album title="Germany top 50" />
@@ -28,14 +35,24 @@ export default class Home extends Component {
                         <Album title="Germany top 50" />
                         <Album title="Germany top 50" />
                         <Album title="Germany top 50" />
-
                         <Album title="Germany top 50" />
                         <Album title="Germany top 50" />
                         <Album title="Germany top 50" />
                         <Album title="Germany top 50" />
                         <Album title="Germany top 50" />
                         <Album title="Germany top 50" />
-
+                        <Album title="Germany top 50" />
+                        <Album title="Germany top 50" />
+                        <Album title="Germany top 50" />
+                        <Album title="Germany top 50" />
+                        <Album title="Germany top 50" />
+                        <Album title="Germany top 50" />
+                        <Album title="Germany top 50" />
+                        <Album title="Germany top 50" />
+                        <Album title="Germany top 50" />
+                        <Album title="Germany top 50" />
+                        <Album title="Germany top 50" />
+                        <Album title="Germany top 50" />
                         <Album title="Germany top 50" />
                         <Album title="Germany top 50" />
                         <Album title="Germany top 50" />

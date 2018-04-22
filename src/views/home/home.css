@@ -1,5 +1,5 @@
-/* @media screen and (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
     #home .album {
-        width: calc(20% - 20px);
+        width: calc(25% - 20px);
     }
-} */
+}
