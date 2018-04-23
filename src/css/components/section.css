@@ -1,0 +1,60 @@
+section + section {
+    margin-top: 40px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.section-header .controls {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.section-title {
+    margin: 0;
+}
+
+.goBack,
+.goNext {
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border: 1px solid transparent;
+    border-top-color: white;
+    border-right-color: white;
+    margin: 0 5px;
+}
+
+.control-disabled {
+    border-top-color: var(--color-gray);
+    border-right-color: var(--color-gray);
+}
+.goBack {
+    transform: rotate(-135deg);
+}
+
+.section-album-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+}
+
+.section-album-container--scrollable {
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.section-album-container--scrollable > .album {
+    margin-right: 20px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}

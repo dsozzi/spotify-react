@@ -9,7 +9,7 @@ export default class Radio extends Component {
         return (
             <React.Fragment>
                 <h1>Radio</h1>
-                <section id="home" className="section-container">
+                <section className="section-container">
                     <SectionHeader title="Recently Played" controls="true" />
 
                     <div className="section-album-container section-album-container--scrollable">
@@ -27,7 +27,7 @@ export default class Radio extends Component {
                         <Album title="Germany top 50" desc="playlist" footer="65,837 FOLLOWERS" />
                     </div>
                 </section>
-                <section id="home" className="section-container">
+                <section className="section-container">
                     <SectionHeader title="Reccomended Stations" controls="true" />
                     <div className="section-album-container section-album-container--scrollable">
                         <Album title="Germany top 50" />

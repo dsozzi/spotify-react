@@ -14,7 +14,7 @@ export default class Section extends Component {
         return (
             <React.Fragment>
                 <h1>Your Daily Mixes</h1>
-                <section id="daily" className="section-container">
+                <section className="section-container">
                     <SectionHeader title="Play the music you love, without the effort. Packed with your favourites and new discoveries." />
                     <div className="section-album-container ">
                         <Album image={daily1} title="Germany top 50" desc="playlist" footer="65,837 FOLLOWERS" />

@@ -1,0 +1,33 @@
+.tab-navigator {
+    display: flex;
+    padding: 10px 0;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+}
+.tab-navigator li a {
+    padding: 10px 0;
+    margin-right: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-navigator li a.active,
+.tab-navigator li a:hover {
+    font-weight: 600;
+    -webkit-font-smoothing: auto;
+    position: relative;
+}
+
+.tab-navigator li a.active:before {
+    content: "";
+    width: 2px;
+    background: var(--color-primary);
+    height: 35px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 15px;
+}

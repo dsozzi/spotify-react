@@ -1,0 +1,22 @@
+.window-controls {
+    display: flex;
+    align-items: center;
+}
+
+.window-controls > span {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.window-control--close {
+    background: var(--color-red);
+}
+.window-control--minimize {
+    background: var(--color-yellow);
+}
+.window-control--maximize {
+    background: var(--color-green);
+}

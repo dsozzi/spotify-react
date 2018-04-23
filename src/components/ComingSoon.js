@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 const ComingSoon = () => {
     return (
-        <div class="coming-soon">
+        <div className="coming-soon">
             <h1>Coming Soon</h1>
         </div>
     );

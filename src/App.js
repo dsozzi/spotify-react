@@ -1,5 +1,11 @@
 import React, { Component } from "react";
+import "./css/components/tabs.css";
+import "./css/components/album.css";
+import "./css/components/sidebar.css";
+import "./css/components/section.css";
+import "./css/components/window-controls.css";
 import "./App.css";
+
 import ComingSoon from "./components/ComingSoon";
 import Daily from "./views/daily/Daily";
 import Home from "./views/home/Home";
