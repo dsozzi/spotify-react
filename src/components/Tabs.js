@@ -1,41 +1,41 @@
-import React, { Component } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 const TabNavigator = props => {
     return (
         <ul className="tab-navigator">
             <li>
-                <NavLink to="/" activeClassName="active">
+                <NavLink exact to={`${props.base}`} activeClassName="active">
                     OVERVIEW
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/podcasts" activeClassName="active">
+                <NavLink to={`${props.base}/podcasts`} activeClassName="active">
                     PODCASTS
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/charts" activeClassName="active">
+                <NavLink to={`${props.base}/charts`} activeClassName="active">
                     CHARTS
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/moods" activeClassName="active">
+                <NavLink to={`${props.base}/moods`} activeClassName="active">
                     GENRES & MOODS
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/new-releases" activeClassName="active">
+                <NavLink to={`${props.base}/new-releases`} activeClassName="active">
                     NEW RELEASES
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/discovery" activeClassName="active">
+                <NavLink to={`${props.base}/discovery`} activeClassName="active">
                     DISCOVERY
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/concerts" activeClassName="active">
+                <NavLink to={`${props.base}/concerts`} activeClassName="active">
                     CONCERTS
                 </NavLink>
             </li>
