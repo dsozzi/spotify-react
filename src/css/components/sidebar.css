@@ -1,7 +1,6 @@
 /* SIDEBAR */
 .sidebar {
     display: flex;
-    max-width: 250px;
     flex-direction: column;
     padding: 10px 20px;
     color: var(--color-gray);

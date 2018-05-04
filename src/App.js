@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import "./css/components/tabs.css";
 import "./css/components/album.css";
 import "./css/components/sidebar.css";
+import "./css/components/header.css";
 import "./css/components/section.css";
 import "./css/components/window-controls.css";
+import "./css/components/controls.css";
 import "./App.css";
 
 import ComingSoon from "./components/ComingSoon";
 import Sidebar from "./components/Sidebar";
+import Header from "./components/Header";
 import Daily from "./views/daily/Daily";
 import Home from "./views/home/Home";
 import Radio from "./views/radio/Radio";
@@ -17,22 +20,20 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <div className="App">
-                    {/* create header compnent */}
-                    <div className="App-header">
-                        <div className="window-controls">
-                            <span className="window-control--close" />
-                            <span className="window-control--minimize" />
-                            <span className="window-control--maximize" />
+                <React.Fragment>
+                    <div id="left">
+                        <div className="App-header">
+                            <div className="window-controls">
+                                <span className="window-control--close" />
+                                <span className="window-control--minimize" />
+                                <span className="window-control--maximize" />
+                            </div>
                         </div>
-                    </div>
-                    {/* create sidebar compnent */}
-                    <div id="main">
                         <Sidebar />
+                    </div>
+                    <div id="right">
+                        <Header />
                         <div id="mainArea">
-                            {/* <section className="main-header">
-                            <div className="main-header__background"></div>
-                        </section> */}
                             <Switch>
                                 <Route exact path="/" render={() => <Redirect to="/home" />} />
                                 <Route exact path="/home" component={Home} />
@@ -43,11 +44,20 @@ class App extends Component {
                             </Switch>
                         </div>
                     </div>
+                    {/* create header compnent */}
+                    {/* create sidebar compnent */}
+                    {/* <div id="main" /> */}
                     <div id="player" />
-                </div>
+                </React.Fragment>
             </Router>
         );
     }
 }
 
 export default App;
+
+{
+    /* <section className="main-header">
+<div className="main-header__background"></div>
+</section> */
+}

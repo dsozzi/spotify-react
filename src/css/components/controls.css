@@ -1,0 +1,22 @@
+.controls {
+    display: flex;
+}
+
+.goBack,
+.goNext {
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border: 1px solid transparent;
+    border-top-color: white;
+    border-right-color: white;
+    margin: 0 5px;
+}
+
+.control-disabled {
+    border-top-color: var(--color-gray);
+    border-right-color: var(--color-gray);
+}
+.goBack {
+    transform: rotate(-135deg);
+}

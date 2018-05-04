@@ -1,0 +1,10 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    height: 45px;
+}
+
+.app-header input {
+    margin-left: 20px;
+}

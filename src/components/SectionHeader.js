@@ -1,3 +1,4 @@
+import "../css/components/controls.css";
 import React from "react";
 const SectionHeader = props => {
     return (

@@ -1,8 +1,8 @@
 :root {
     --color-primary: #1ed760;
     --color-primary-darker: #1db954;
-    /* --color-black: #191414; */
-    --color-black: rgb(24, 24, 24);
+    /* --color-black: rgb(24, 24, 24); */
+    --color-black: rgb(18, 18, 18);
     --color-black-lighter: #1c1c1c;
     --color-white: #ffffff;
     --color-border: #333;
@@ -10,8 +10,9 @@
     --color-red: rgb(237, 106, 93);
     --color-yellow: rgb(245, 192, 71);
     --color-green: rgb(98, 199, 85);
-
     --font-color: var(--color-black);
+
+    --border-radius: 30px;
 }
 
 body {
@@ -26,9 +27,9 @@ body {
 
 html,
 body,
-#root,
-.App {
+#root {
     height: 100%;
+    overflow: hidden;
 }
 
 a {
