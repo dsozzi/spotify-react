@@ -20,7 +20,7 @@ and visit `localhost:3000`
 
 ### Demo
 
-[http://www.musaethemes.com/spotify-react](http://www.musaethemes.com/spotify-react)
+[https://www.dsozzi.it/spotify](https://www.dsozzi.it/spotify)
 
 ### Sidenotes
 
