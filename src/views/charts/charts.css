@@ -1,0 +1,3 @@
+.view-charts .album {
+    width: calc(25% - var(--album-margin));
+}

@@ -34,14 +34,16 @@ class App extends Component {
                     <div id="right">
                         <Header />
                         <div id="mainArea">
-                            <Switch>
-                                <Route exact path="/" render={() => <Redirect to="/home" />} />
-                                <Route exact path="/home" component={Home} />
-                                <Route exact path="/home/:section" component={Home} />
-                                <Route path="/daily" component={Daily} />
-                                <Route path="/radio" component={Radio} />
-                                <Route component={ComingSoon} />
-                            </Switch>
+                            <div className="container">
+                                <Switch>
+                                    <Route exact path="/" render={() => <Redirect to="/home" />} />
+                                    <Route exact path="/home" component={Home} />
+                                    <Route exact path="/home/:section" component={Home} />
+                                    <Route path="/daily" component={Daily} />
+                                    <Route path="/radio" component={Radio} />
+                                    <Route component={ComingSoon} />
+                                </Switch>
+                            </div>
                         </div>
                     </div>
                     {/* create header compnent */}
@@ -56,8 +58,8 @@ class App extends Component {
 
 export default App;
 
-{
-    /* <section className="main-header">
+// {
+/* <section className="main-header">
 <div className="main-header__background"></div>
 </section> */
-}
+// }

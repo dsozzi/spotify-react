@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
 export default class Album extends Component {
-    generateRandomInteger = (min = 0, max = 1000) => Math.floor(min + Math.random() * (max + 1 - min));
+    generateRandomInteger = (min = 1, max = 100) => Math.floor(min + Math.random() * (max + 1 - min));
 
     render() {
-        const img = this.props.image || `https://picsum.photos/200/?random&t=${this.generateRandomInteger()}`;
+        const imgUrl =
+            this.props.image || `${process.env.PUBLIC_URL}/images/albums/${this.generateRandomInteger()}.png`;
         return (
             <div className="album">
-                <img src={img} alt="" className="album-cover" />
+                <img src={imgUrl} alt="" className="album-cover" />
                 <a className="album__title" href="#">
                     {this.props.title}
                 </a>

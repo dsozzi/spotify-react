@@ -23,17 +23,21 @@
 #right {
     flex: 1;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(rgb(47, 47, 47), var(--color-black-lighter) 55%);
 }
-
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
 /* MAIN AREA */
 #mainArea {
     position: relative;
     overflow: auto;
-    height: 100%;
-    max-width: 1500px;
+    /* height: 100%; */
+    flex: 1;
     padding: 30px;
-    margin: auto;
 }
 
 .main-header {
@@ -57,17 +61,17 @@
 
 @media screen and (max-width: 1500px) {
     .album {
-        width: calc(25% - 20px);
+        width: calc(25% - var(--album-margin));
     }
 }
 
 @media screen and (max-width: 1200px) {
     .album {
-        width: calc(33.333% - 20px);
+        width: calc(33.333% - var(--album-margin));
     }
 }
 @media screen and (max-width: 840px) {
     .album {
-        width: calc(50% - 20px);
+        width: calc(50% - var(--album-margin));
     }
 }
