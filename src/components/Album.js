@@ -4,8 +4,7 @@ export default class Album extends Component {
     generateRandomInteger = (min = 1, max = 100) => Math.floor(min + Math.random() * (max + 1 - min));
 
     render() {
-        const imgUrl =
-            this.props.image || `${process.env.PUBLIC_URL}/images/albums/${this.generateRandomInteger()}.png`;
+        const imgUrl = this.props.image || "";
         return (
             <div className="album">
                 <img src={imgUrl} alt="" className="album-cover" />
